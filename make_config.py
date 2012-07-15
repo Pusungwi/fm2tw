@@ -15,11 +15,11 @@ def main(filename='config.yaml'):
 	LASTFM_FEED = \
 		"http://ws.audioscrobbler.com/2.0/user/%s/recenttracks.rss" % lastfm
 	f = open(filename, "w")
-	f.write("CONSUMER_KEY: %s\n" % CONSUMER_KEY)
-	f.write("CONSUMER_SECRET: %s\n" % CONSUMER_SECRET)
-	f.write("ACCESS_TOKEN_KEY: %s\n" % ACCESS_TOKEN_KEY)
-	f.write("ACCESS_TOKEN_SECRET: %s\n" % ACCESS_TOKEN_SECRET)
-	f.write("LASTFM_FEED: %s\n" % LASTFM_FEED)
+	f.write("CONSUMER_KEY: {0}\n".format(CONSUMER_KEY))
+	f.write("CONSUMER_SECRET: {0}\n".format(CONSUMER_SECRET))
+	f.write("ACCESS_TOKEN_KEY: {0}\n".format(ACCESS_TOKEN_KEY))
+	f.write("ACCESS_TOKEN_SECRET: {0}\n".format(ACCESS_TOKEN_SECRET))
+	f.write("LASTFM_FEED: {0}\n".format(LASTFM_FEED))
 
 if __name__ == "__main__":
         main()
