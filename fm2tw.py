@@ -114,7 +114,7 @@ def _post_twitter(scrob, post_format=None):
         try:
             api.statuses.update(status=msg)
             return
-        except IOError:
+        except TwitterHTTPError:
             dup += 1
 
 def new_post(scrob, last, post_format=None):
