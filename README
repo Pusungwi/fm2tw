@@ -2,7 +2,7 @@ fm2tw
 
 Originally by d3m3vilurr (http://github.com/d3m3vilurr/fm2tw)
 
-Support Python 3.2.3 (not 2)
+Difference : Support Python 3.2.3 (not 2)
 
 Required Module
 1. pyyaml (http://www.pyyaml.org)
